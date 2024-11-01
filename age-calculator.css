@@ -1,0 +1,134 @@
+body {
+  --body-primary: hsl(0, 0%, 94%);
+  --container-primary: white;
+  --text-primary: black;
+  --button-theme: rgb(48, 46, 46);
+}
+
+.dark-theme {
+  --body-primary: rgb(31, 31, 31);
+  --container-primary: rgb(48, 46, 46);
+  --text-primary: white;
+  --button-theme: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--body-primary);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: var(--container-primary);
+  padding: 1rem 4.7rem 1rem 1rem;
+  border-radius: 1rem;
+  border-bottom-right-radius: 7rem;
+  position: relative;
+  border: 0.1px solid hsl(0, 0%, 47%);
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+label {
+  font-size: 11px;
+  font-family: inherit;
+  color: var(--text-primary);
+}
+
+hr {
+  width: 100%;
+}
+
+input {
+  width: 3.2rem;
+  height: 2rem;
+  padding-left: 0.35rem;
+  font-family: "Poppins", sans-serif;
+  border: 0.3px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+  font-size: 14.5px;
+  margin-bottom: 1rem;
+}
+
+.inputs > div > p {
+  color: red;
+  font-size: 12px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 1.4rem;
+  top: 4.75rem;
+  height: 3.3rem;
+  width: 3.3rem;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(259, 100%, 65%);
+}
+
+.theme {
+  top: 0;
+  right: 1rem;
+  background-color: var(--button-theme);
+}
+
+.dark-mode {
+  display: flex;
+}
+
+.light-mode {
+  display: none;
+}
+
+button > img {
+  height: 1.5rem;
+}
+
+.outputs > div {
+  display: flex;
+}
+
+.outputs > div > p {
+  padding: 0;
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: hsl(259, 100%, 65%);
+}
+
+.outputs > div > h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 3.25rem;
+  font-weight: bolder;
+  color: var(--text-primary);
+}
+
+@media screen and (max-width: 768px) {
+  .inputs {
+    margin-bottom: 2rem;
+  }
+
+  button {
+    right: 8rem;
+    top: 6rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}

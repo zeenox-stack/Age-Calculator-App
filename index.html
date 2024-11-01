@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <link rel="stylesheet" href="age-calculator.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="inputs">
+        <div class="days">
+          <label for="day" class="day-label">DAY</label>
+          <br />
+          <input type="number" name="day" id="day" placeholder="DD" />
+        </div>
+        <div class="months">
+          <label for="month" class="month-label">MONTH</label>
+          <br />
+          <input type="number" name="month" id="month" placeholder="MM" />
+        </div>
+        <div class="years">
+          <label for="year" class="year-label">YEAR</label>
+          <br />
+          <input type="number" name="year" id="year" placeholder="YYYY" />
+        </div>
+        <button class="success">
+          <img
+            src="./assets/images/icon-arrow.svg"
+            alt="submitting results button"
+          />
+        </button>
+      </div>
+      <hr />
+      <div class="outputs">
+        <div class="year-display">
+          <p class="years-display">--</p>
+          <h2>years</h2>
+        </div>
+        <div class="month-display">
+          <p class="months-display">--</p>
+          <h2>months</h2>
+        </div>
+        <div class="day-display">
+          <p class="days-display">--</p>
+          <h2>days</h2>
+        </div>
+      </div>
+    </main>
+    <button class="theme">
+      <div class="dark-mode">
+        <img
+          src="./Icons/dark_mode_27dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.svg"
+          alt="switch to dark mode"
+        />
+      </div>
+      <div class="light-mode">
+        <img
+          src="./Icons/light_mode_26dp_UNDEFINED_FILL0_wght400_GRAD0_opsz24.svg"
+          alt=" switch to light-mode"
+        />
+      </div>
+    </button>
+    <script src="age-calculator.js"></script>
+  </body>
+</html>
